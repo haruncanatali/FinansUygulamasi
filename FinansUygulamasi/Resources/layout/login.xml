@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finans Hesabı Uygulaması"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/mainLogoImg"
+        android:src="@drawable/outline_login_24"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Kullanıcı Adı"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Şifre"
+            android:password="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="Giriş"
+        android:id="@+id/girisBtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Üye ol"
+        android:layout_marginTop="10dp"
+        android:textColor="#2980b9"
+        android:clickable="true"
+        android:id="@+id/uyeOlTxtBtn"/>
+
+
+</LinearLayout>

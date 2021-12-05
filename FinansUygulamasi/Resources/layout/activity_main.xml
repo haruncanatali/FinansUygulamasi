@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E2E3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:background="@android:color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:src="@drawable/profileimage"
+            android:scaleType="centerCrop"
+            android:id="@+id/profilePhotoImg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haruncan Atalı"
+            android:layout_toRightOf="@+id/profilePhotoImg"
+            android:id="@+id/profileNameTxt"
+            android:letterSpacing=".12"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileNameTxt"
+            android:layout_toRightOf="@+id/profilePhotoImg"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sehirTxt"
+            android:text="Zonguldak"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/sehirTxt"
+            android:layout_toRightOf="@+id/profilePhotoImg"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/baslangicParasiTxt"
+            android:text="15,884.50 ₺ (Başlangıç Paranız)"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/outline_settings_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ayarlarImgBtn"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakiyeniz"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="55,999.00 ₺"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/bakiyeTxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Son İşlemler"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/islemlerListView"
+        android:layout_height="241.0dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="45dp"
+            android:textSize="15dp"
+            android:id="@+id/yeniIslemBtn"
+            android:background="@drawable/button_rounded"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/outline_add_circle_outline_24"
+            android:text="Yeni İşlem"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="15dp"
+            android:background="@drawable/button_rounded"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tumIslemlerBtn"
+            android:textAllCaps="false"
+            android:text="İşlem Geçmişi"
+            android:drawableLeft="@drawable/outline_history_24"/>
+    </LinearLayout>
+</LinearLayout>

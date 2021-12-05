@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Adınız"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Soyadınız"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/soyadRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+  <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Konumunuz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/konumRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Fotoğraf Linkiniz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fotoLinkRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Kullanıcı Adınız"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/kAdiRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Şifreniz"
+            android:password="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sifreRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Bakiyeniz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bakiyeRegTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Kaydet"
+            android:textAllCaps="false"
+            android:background="#009432"
+            android:id="@+id/kaydetRgBtn"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ED4C67"
+            android:text="İptal"
+            android:textAllCaps="false"
+            android:id="@+id/iptalRgBtn"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
